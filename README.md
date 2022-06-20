@@ -27,7 +27,7 @@
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;10. payment_token_decimals : 10的幾次方位 (用來除deal_price的)<br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;11. payment_token_usdprice : 當時幣別換算約當美金價格(粗略不精確)<br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;12. quantity : 此筆交易單token成交數量。(>1代表bundle)<br>
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;13. asset_bundle : bundle銷售的資訊，此欄位保留opensea api 原始json欄位，沒有特別處理。
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;13. asset_bundle : bundle銷售的資訊，此欄位保留opensea api 原始json欄位，沒有特別處理。<br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;此欄位也是造成data crawler產生的檔案，會需要修復的原因，因含有特殊字符。<br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;14. auction_type : 此筆交易的賣家拍賣方式 ex.英式拍、荷蘭拍<br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;15. bid_amount : bid價格<br>
@@ -36,7 +36,7 @@
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;18. contract_address : 若token在opensea鑄造會記錄其opensea交易所的地址，一般完整的項目發售都會有自己的合約地址。<br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;19. wallet_address_input : 執行data crawler.py 的準備檔案裡的地址資料<br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;20. pages : 此筆地址在opensea api裡面的頁數，一頁20筆<br>
-&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;21. msg : SOMTHING WRONG、Fail-no asset_events代表這筆 wallet_address_input 沒有執行抓完，
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;21. msg : SOMTHING WRONG、Fail-no asset_events代表這筆 wallet_address_input 沒有執行抓完，<br>
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;應整個檔案的此筆wallet_address_input都刪除。<br>
 
 ------
