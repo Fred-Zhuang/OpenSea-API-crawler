@@ -24,9 +24,9 @@ opensea_totaladdress = desktop + "\\opensea_wallet\\remain\\NFT20_list1_todo2.xl
 xw.Book(opensea_totaladdress).sheets[0].activate()
 df_opensea_totaladdress = xw.Range(xw.Range("A1").expand().address).options(pd.DataFrame,index=False).value
 
-api_key = "1f94388cfa2448f7808470e4839588b3"
-api_key2 = "a109eed04b9b4a3f81d6d58ab229ab33"
-api_key3 = "0c6c055327164e9ea5cd4ac8cb3913fb"
+api_key = ""
+api_key2 = ""
+api_key3 = ""
 
 #2.存檔的檔案名稱，自己取
 nft_name = "NFT20_list2"
