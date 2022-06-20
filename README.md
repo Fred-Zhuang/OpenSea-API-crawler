@@ -1,7 +1,7 @@
 一、研究目標 : 找出在Fomo前一日哪些群體的參與(買進)，能有效預測Fomo當日發生。
 
 二、資料抓取操作與使用(data crawler) :
-....(一)、準備檔案(ex. coolcatsnft_補跑清單0513.xlsx)，可以依目標選擇放入錢包地址or專案契約地址，不能混放<br>
+⋅⋅⋅(一)、準備檔案(ex. coolcatsnft_補跑清單0513.xlsx)，可以依目標選擇放入錢包地址or專案契約地址，不能混放<br>
     (二)、填入api_key<br>
     (三)、填入產出檔案名稱(nft_name)<br>
     (四)、檢查events_api變數，若要抓錢包地址需使用account_address參數，專案契約地址使用asset_contract_address<br>
