@@ -12,8 +12,8 @@
     (七)、在桌面創立一個空的資料夾命名為opensea_wallet，檔案都會在裡面產生。<br>
 
 三、資料欄位說明:<br>
-    - (一)、以抓取錢包地址、成交交易單事件的產出檔案為例<br>
-        1. event_timestamp :  是成交的時間，和Etherscan Transaction 鏈上時間一致<br>
+&ensp;(一)、以抓取錢包地址、成交交易單事件的產出檔案為例<br>
+        &ensp;1. event_timestamp :  是成交的時間，和Etherscan Transaction 鏈上時間一致<br>
         2. event_type : 事件類別(os api 參數)<br>
         3. token_id : 不是所有NFT項目的token_id都會跟發行總數對應去整齊命名<br>
         4. num_sales : 此筆token被轉手了幾次，隨著時間累計被交易了幾次，代表token的熱門程度<br>
