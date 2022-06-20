@@ -1,18 +1,18 @@
-一、研究目標 : 找出在Fomo前一日哪些群體的參與(買進)，能有效預測Fomo當日發生。
+一、研究目標 : 找出在Fomo前一日哪些群體的參與(買進)，能有效預測Fomo當日發生。<br>
 
-二、資料抓取操作與使用(data crawler) :
-        (一)、準備檔案(ex. coolcatsnft_補跑清單0513.xlsx)，可以依目標選擇放入錢包地址or專案契約地址，不能混放<br>
-        (二)、填入api_key<br>
-        (三)、填入產出檔案名稱(nft_name)<br>
-        (四)、檢查events_api變數，若要抓錢包地址需使用account_address參數，專案契約地址使用asset_contract_address<br>
-        (五)、填入event_type，設定要抓取的事件，抓取成交交易單使用"successful"。<br>
-        (六)、填入divide、range_s、range_e。<br>
-            1. divide : 要用多少筆數來切總列數(檔案)、range_s : 執行首序列號、range_e : 執行末序列號<br>
-            2. 切成幾等分就會調用幾隻api_key來平行執行，目前最大三隻api key，若要新增需要多新增api_key變數<br>
-        (七)、在桌面創立一個空的資料夾命名為opensea_wallet，檔案都會在裡面產生。<br>
+二、資料抓取操作與使用(data crawler) :<br>
+    (一)、準備檔案(ex. coolcatsnft_補跑清單0513.xlsx)，可以依目標選擇放入錢包地址or專案契約地址，不能混放<br>
+    (二)、填入api_key<br>
+    (三)、填入產出檔案名稱(nft_name)<br>
+    (四)、檢查events_api變數，若要抓錢包地址需使用account_address參數，專案契約地址使用asset_contract_address<br>
+    (五)、填入event_type，設定要抓取的事件，抓取成交交易單使用"successful"。<br>
+    (六)、填入divide、range_s、range_e。<br>
+        1. divide : 要用多少筆數來切總列數(檔案)、range_s : 執行首序列號、range_e : 執行末序列號<br>
+        2. 切成幾等分就會調用幾隻api_key來平行執行，目前最大三隻api key，若要新增需要多新增api_key變數<br>
+    (七)、在桌面創立一個空的資料夾命名為opensea_wallet，檔案都會在裡面產生。<br>
 
-三、資料欄位說明:
-    (一)、以抓取錢包地址、成交交易單事件的產出檔案為例<br>
+三、資料欄位說明:<br>
+    - (一)、以抓取錢包地址、成交交易單事件的產出檔案為例<br>
         1. event_timestamp :  是成交的時間，和Etherscan Transaction 鏈上時間一致<br>
         2. event_type : 事件類別(os api 參數)<br>
         3. token_id : 不是所有NFT項目的token_id都會跟發行總數對應去整齊命名<br>
